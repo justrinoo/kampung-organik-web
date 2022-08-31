@@ -456,6 +456,84 @@ export default function Home() {
 				</div>
 			</section>
 			{/* Product */}
+
+			<section className="mt-36 mb-36 relative">
+				<h2 className="text-[51px] font-semibold">
+					Kata <span className="text-light-green">Sobat Organik</span>
+				</h2>
+				<Carousel responsive={responsive} arrows>
+					<article className="mt-8 bg-white mx-5 shadow-md p-5 mb-10 rounded-md">
+						<div className="flex items-center">
+							<div>
+								<Image
+									src="/static/img/testi-1.png"
+									alt="Testimonial"
+									width={72}
+									height={72}
+									className="rounded-full"
+									objectFit="cover"
+								/>
+							</div>
+							<div className="mx-4">
+								<p className="text-light-green">Pak Sholeh</p>
+								<p>Petani</p>
+							</div>
+						</div>
+						<blockquote className="mt-5">
+							<p className="font-light text-sm">
+								“ Bagus Bagus Bibitnya, dapat banyak bonus lagi! ”
+							</p>
+						</blockquote>
+					</article>
+					<article className="mt-8 bg-white mx-5 shadow-md p-5 mb-10 rounded-md">
+						<div className="flex items-center">
+							<div>
+								<Image
+									src="/static/img/testi-2.png"
+									alt="Testimonial"
+									width={72}
+									height={72}
+									className="rounded-full"
+									objectFit="cover"
+								/>
+							</div>
+							<div className="mx-4">
+								<p className="text-light-green">Mas Zahid</p>
+								<p>Peternak Kelinci</p>
+							</div>
+						</div>
+						<blockquote className="mt-5">
+							<p className="font-light text-sm">
+								“ Ramah banget di kasih konsultasi sesuai kebutuhan lahan ”
+							</p>
+						</blockquote>
+					</article>
+					<article className="mt-8 bg-white mx-5 shadow-md p-5 mb-10 rounded-md">
+						<div className="flex items-center">
+							<div>
+								<Image
+									src="/static/img/testi-3.png"
+									alt="Testimonial"
+									width={72}
+									height={72}
+									className="rounded-full"
+									objectFit="cover"
+								/>
+							</div>
+							<div className="mx-4">
+								<p className="text-light-green">Pak Yandi</p>
+								<p>Peternak Kambing</p>
+							</div>
+						</div>
+						<blockquote className="mt-5">
+							<p className="font-light text-sm">
+								“ Bibitnya Segar segar dan super pada tumbuh alhamdulillah next
+								order lagi! ”
+							</p>
+						</blockquote>
+					</article>
+				</Carousel>
+			</section>
 		</Layout>
 	);
 }
