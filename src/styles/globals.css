@@ -14,3 +14,39 @@ body {
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
+.card-product-1 {
+	background-image: url(/static/img/product-1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.card-product-2 {
+	background-image: url(/static/img/product-2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.card-product-3 {
+	background-image: url(/static/img/product-3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.card-product-4 {
+	background-image: url(/static/img/product-4.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.card-product-5 {
+	background-image: url(/static/img/product-5.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.card-product-6 {
+	background-image: url(/static/img/product-6.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}

@@ -2,8 +2,30 @@ import Layout from "../components/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export default function Home() {
+	const responsive = {
+		superLargeDesktop: {
+			// the naming can be any, depends on you.
+			breakpoint: { max: 4000, min: 3000 },
+			items: 5,
+		},
+		desktop: {
+			breakpoint: { max: 3000, min: 1024 },
+			items: 3,
+		},
+		tablet: {
+			breakpoint: { max: 1024, min: 464 },
+			items: 2,
+		},
+		mobile: {
+			breakpoint: { max: 464, min: 0 },
+			items: 1,
+		},
+	};
+
 	return (
 		<Layout titlePage={"Home"}>
 			<header className="relative">
@@ -153,6 +175,287 @@ export default function Home() {
 				</div>
 			</section>
 			{/* Panen */}
+
+			{/* Product */}
+			<section className="mt-36 mb-36 relative">
+				<h1 className="text-[51px]  font-semibold">
+					Tingkatkan <span className="text-[#2F7B43]">Produktivitas</span>{" "}
+					<br /> Hasil <span className="text-[#2F7B43]">Maksimal</span> dengan
+					Biaya Murah <br /> Dengan Menanam{" "}
+					<span className="text-[#2F7B43]">Rumput</span>
+				</h1>
+				<div>
+					<Carousel responsive={responsive} showDots>
+						<div className="card-product-1 rounded-3xl mx-5 p-12 mb-10 mt-10">
+							<h6 className="tracking-[2.8px] font-semibold text-[#FDF901] shadow-primary-green">
+								BIBIT RUMPUT
+							</h6>
+							<hr className="w-24 mt-2 mb-2 h-2 rounded-2xl bg-white" />
+
+							<h4 className="text-[31px] font-bold text-white mt-8 mb-4">
+								Zanzibar
+							</h4>
+
+							<p className="text-[#E2EFD2] mb-4">
+								Rumput dengan Protein Tertinggi hingga 20%
+							</p>
+							<button className="uppercase text-light-green bg-white py-2 px-4 rounded">
+								pesan sekarang!
+							</button>
+						</div>
+						<div className="card-product-2 rounded-3xl mx-5 p-12 mb-10 mt-10">
+							<h6 className="tracking-[2.8px] font-semibold text-[#FDF901] shadow-primary-green">
+								BIBIT RUMPUT
+							</h6>
+							<hr className="w-24 mt-2 mb-2 h-2 rounded-2xl bg-white" />
+
+							<h4 className="text-[31px] font-bold text-white mt-8 mb-4">
+								Red Napier
+							</h4>
+
+							<p className="text-[#E2EFD2] mb-4">
+								Rumput untukhewan ternak perah penghasil susu
+							</p>
+							<button className="uppercase text-light-green bg-white py-2 px-4 rounded">
+								pesan sekarang!
+							</button>
+						</div>
+						<div className="card-product-3 rounded-3xl mx-5 p-12 mb-10 mt-10 absolute">
+							<h6 className="tracking-[2.8px] font-semibold text-[#FDF901] shadow-primary-green">
+								BIBIT RUMPUT
+							</h6>
+							<hr className="w-24 mt-2 mb-2 h-2 rounded-2xl bg-white" />
+
+							<h4 className="text-[31px] font-bold text-white mt-8 mb-4">
+								Gama Umami
+							</h4>
+
+							<p className="text-[#E2EFD2] mb-4">
+								Rumput Tanpa Bulu Halus hasil ciptaan dosen UGM
+							</p>
+							<button className="uppercase text-light-green bg-white py-2 px-4 rounded">
+								pesan sekarang!
+							</button>
+						</div>
+					</Carousel>
+				</div>
+			</section>
+			{/* Product */}
+
+			{/* Product */}
+			<section className="mt-36 mb-36 relative">
+				<h1 className="text-[51px] font-semibold">
+					Cara Menanam dan <span className="text-[#2F7B43]">Rumput</span> dan{" "}
+					<span className="text-[#2F7B43]">Hijauan</span>
+				</h1>
+				<div>
+					<Carousel responsive={responsive} showDots>
+						<div className="card-product-1 rounded-3xl mx-5 p-12 mb-10 mt-10">
+							<h6 className="tracking-[2.8px] font-semibold text-[#FDF901] shadow-primary-green">
+								BIBIT RUMPUT
+							</h6>
+							<hr className="w-24 mt-2 mb-2 h-2 rounded-2xl bg-white" />
+
+							<h4 className="text-[31px] font-bold text-white mt-8 mb-4">
+								Zanzibar
+							</h4>
+
+							<p className="text-[#E2EFD2] mb-4">
+								Rumput dengan Protein Tertinggi hingga 20%
+							</p>
+							<button className="uppercase text-light-green bg-white py-2 px-4 rounded">
+								pesan sekarang!
+							</button>
+						</div>
+						<div className="card-product-2 rounded-3xl mx-5 p-12 mb-10 mt-10">
+							<h6 className="tracking-[2.8px] font-semibold text-[#FDF901] shadow-primary-green">
+								BIBIT RUMPUT
+							</h6>
+							<hr className="w-24 mt-2 mb-2 h-2 rounded-2xl bg-white" />
+
+							<h4 className="text-[31px] font-bold text-white mt-8 mb-4">
+								Red Napier
+							</h4>
+
+							<p className="text-[#E2EFD2] mb-4">
+								Rumput untukhewan ternak perah penghasil susu
+							</p>
+							<button className="uppercase text-light-green bg-white py-2 px-4 rounded">
+								pesan sekarang!
+							</button>
+						</div>
+						<div className="card-product-3 rounded-3xl mx-5 p-12 mb-10 mt-10 absolute">
+							<h6 className="tracking-[2.8px] font-semibold text-[#FDF901] shadow-primary-green">
+								BIBIT RUMPUT
+							</h6>
+							<hr className="w-24 mt-2 mb-2 h-2 rounded-2xl bg-white" />
+
+							<h4 className="text-[31px] font-bold text-white mt-8 mb-4">
+								Gama Umami
+							</h4>
+
+							<p className="text-[#E2EFD2] mb-4">
+								Rumput Tanpa Bulu Halus hasil ciptaan dosen UGM
+							</p>
+							<button className="uppercase text-light-green bg-white py-2 px-4 rounded">
+								pesan sekarang!
+							</button>
+						</div>
+					</Carousel>
+				</div>
+			</section>
+			{/* Product */}
+
+			{/* Product */}
+			<section className="mt-36 mb-36 relative">
+				<h1 className="text-[51px] font-semibold">
+					Hijauan untuk maksimalkan <br /> kebutuhan{" "}
+					<span className="text-[#2F7B43]">
+						{" "}
+						Serat Kasar <br />
+					</span>
+					Hewan Ternak
+				</h1>
+				<div>
+					<Carousel responsive={responsive} showDots>
+						<div className="card-product-4 rounded-3xl mx-5 p-12 mb-10 mt-10">
+							<h6 className="tracking-[2.8px] font-semibold text-[#FDF901] shadow-primary-green">
+								BIBIT HIJAUAN
+							</h6>
+							<hr className="w-24 mt-2 mb-2 h-2 rounded-2xl bg-white" />
+
+							<h4 className="text-[31px] font-bold text-white mt-8 mb-4">
+								Indigofera
+							</h4>
+
+							<p className="text-[#E2EFD2] mb-4">
+								Protein Terbaik dalam Hijauan
+							</p>
+							<button className="uppercase text-light-green bg-white py-2 px-4 rounded">
+								pesan sekarang!
+							</button>
+						</div>
+						<div className="card-product-5 rounded-3xl mx-5 p-12 mb-10 mt-10">
+							<h6 className="tracking-[2.8px] font-semibold text-[#FDF901] shadow-primary-green">
+								BIBIT HIJAUAN
+							</h6>
+							<hr className="w-24 mt-2 mb-2 h-2 rounded-2xl bg-white" />
+
+							<h4 className="text-[31px] font-bold text-white mt-8 mb-4">
+								Kaliandra
+							</h4>
+
+							<p className="text-[#E2EFD2] mb-4">
+								Pilihan Serat kasar untuk kambing
+							</p>
+							<button className="uppercase text-light-green bg-white py-2 px-4 rounded">
+								pesan sekarang!
+							</button>
+						</div>
+						<div className="card-product-6 rounded-3xl mx-5 p-12 mb-10 mt-10 absolute">
+							<h6 className="tracking-[2.8px] font-semibold text-[#FDF901] shadow-primary-green">
+								BIBIT HIJAUAN
+							</h6>
+							<hr className="w-24 mt-2 mb-2 h-2 rounded-2xl bg-white" />
+
+							<h4 className="text-[31px] font-bold text-white mt-8 mb-4">
+								Singkong Karet
+							</h4>
+
+							<p className="text-[#E2EFD2] mb-4">
+								Tinggal Stek sob tanpa ribet
+							</p>
+							<button className="uppercase text-light-green bg-white py-2 px-4 rounded">
+								pesan sekarang!
+							</button>
+						</div>
+					</Carousel>
+				</div>
+			</section>
+			{/* Product */}
+
+			{/* Product */}
+			<section className="mt-36 mb-36 relative">
+				<h1 className="text-[51px] font-semibold">
+					Cocok untuk Jenis
+					<span className="text-[#2F7B43]"> Hewan Ternak</span>
+				</h1>
+				<div className="grid grid-cols-3 gap-3">
+					<div className="rounded-3xl mb-10 mt-10">
+						<div className="flex justify-center">
+							<Image
+								src="/static/img/sapi.png"
+								alt="sapi"
+								width={350}
+								height={350}
+								objectFit="contain"
+							/>
+						</div>
+						<h1 className="text-[45px] text-center font-semibold">Sapi</h1>
+					</div>
+					<div className="rounded-3xl mb-10 mt-10">
+						<div className="flex justify-center">
+							<Image
+								src="/static/img/kambing.png"
+								alt="kambing"
+								width={350}
+								height={350}
+								objectFit="contain"
+							/>
+						</div>
+						<h1 className="text-[45px] text-center font-semibold">kambing</h1>
+					</div>
+					<div className="rounded-3xl mb-10 mt-10">
+						<div className="flex justify-center">
+							<Image
+								src="/static/img/kelinci.png"
+								alt="kelinci"
+								width={350}
+								height={350}
+								objectFit="contain"
+							/>
+						</div>
+						<h1 className="text-[45px] text-center font-semibold">kelinci</h1>
+					</div>
+					<div className="rounded-3xl mb-10 mt-10">
+						<div className="flex justify-center">
+							<Image
+								src="/static/img/kuda.png"
+								alt="kuda"
+								width={350}
+								height={350}
+								objectFit="contain"
+							/>
+						</div>
+						<h1 className="text-[45px] text-center font-semibold">kuda</h1>
+					</div>
+					<div className="rounded-3xl mb-10 mt-10">
+						<div className="flex justify-center">
+							<Image
+								src="/static/img/domba.png"
+								alt="domba"
+								width={350}
+								height={350}
+								objectFit="contain"
+							/>
+						</div>
+						<h1 className="text-[45px] text-center font-semibold">domba</h1>
+					</div>
+					<div className="rounded-3xl mb-10 mt-10">
+						<div className="flex justify-center">
+							<Image
+								src="/static/img/kerbau.png"
+								alt="kerbau"
+								width={350}
+								height={350}
+								objectFit="contain"
+							/>
+						</div>
+						<h1 className="text-[45px] text-center font-semibold">kerbau</h1>
+					</div>
+				</div>
+			</section>
+			{/* Product */}
 		</Layout>
 	);
 }
