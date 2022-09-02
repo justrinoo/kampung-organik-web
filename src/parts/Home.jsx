@@ -456,7 +456,6 @@ export default function Home() {
 				</div>
 			</section>
 			{/* Product */}
-
 			<section className="mt-36 mb-36 relative">
 				<h2 className="text-[51px] font-semibold">
 					Kata <span className="text-light-green">Sobat Organik</span>
@@ -534,6 +533,51 @@ export default function Home() {
 					</article>
 				</Carousel>
 			</section>
+			{/* Product */}
+
+			{/* Contact */}
+			<section className="mt-36 mb-36 flex flex-col justify-center items-center">
+				<h2 className="text-[36px] font-semibold">
+					Ikuti <span className="text-light-green">Sosial Media</span> Kami!
+				</h2>
+				<div>
+					<Image
+						src="/static/img/instagram.png"
+						alt="instagram"
+						width={200}
+						height={200}
+						objectFit="contain"
+					/>
+					<Image
+						src="/static/img/youtube.png"
+						alt="instagram"
+						width={200}
+						height={200}
+						objectFit="contain"
+					/>
+				</div>
+				<div className="py-12 px-16 bg-white w-2/3 shadow-sm shadow-black rounded-3xl">
+					<h1 className="text-[#2F7B43] text-[36px] font-bold w-full">
+						<span className="text-black">
+							Pesan Sekarang dan dapatkan Gratis Konsultasi Seputar
+						</span>{" "}
+						Pakan Ternak
+					</h1>
+					<div className="flex justify-end">
+						<button className="flex items-center bg-[#003D10] mt-5 text-white font-bold py-3 px-7 rounded-md">
+							<span className="block mr-5 text-xl">Hubungi Kami!</span>
+							<Image
+								src="/static/img/whatsapp.png"
+								alt="whatsapp"
+								width={30}
+								height={30}
+								objectFit="contain"
+							/>
+						</button>
+					</div>
+				</div>
+			</section>
+			{/* Contact */}
 		</Layout>
 	);
 }
